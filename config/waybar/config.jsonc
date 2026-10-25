@@ -1,0 +1,55 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 30,
+    "spacing": 4,
+
+    "modules-left": [
+    	"ext/workspaces"
+    	//"mango/layout",
+    	//"mango/window"
+    ],
+    "modules-center": [
+        "clock"
+    ],
+    "modules-right": [
+        "wireplumber",
+        "network",
+        "battery",
+        "tray"
+    ],
+    "mango/workspaces": {
+    	"format": "{icon}",
+    	"hide-empty": true,
+    	"on-click": "activate",
+    	"on-click-right": "toggle",
+    	"overview-label": "OVERVIEW"
+    },
+    "mango/layout": {
+    	"format": "{}"
+    // "format-S": "Scroller",
+    // "format-T": "Tile",
+    },
+    "mango/window": {
+    	"format": "{}",
+    	"icon-size": 20
+    },
+    "clock": {
+        "format": "{:%Y-%m-%d %H:%M}",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+    },
+    "battery": {
+        "format": "{capacity}% {icon}",
+        "format-icons": ["  ", "  ", "  ", "  ", "  "]
+    },
+    "network": {
+        "format-wifi": "{signalStrength}  ",
+        "format-disconnected": "Disconnected  "
+    },
+    "wireplumber": {
+        "format": "{volume}% {icon}",
+        "format-muted": "Muted  ",
+        "format-icons": {
+            "default": [" ", " ", " "]    }
+    }
+}
