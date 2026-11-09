@@ -4,22 +4,34 @@
 }
 
 window#waybar {
-    background-color: rgba(26, 27, 38, 0.67);
+    background-color: transparent;
     color: #c0caf0;
 }
 
+/* A separate capsule for each module */
+#clock,
+#battery,
+#network,
+#wireplumber {
+    background-color: rgba(36, 40, 59, 0.3);
+    padding: 0 10px;
+    margin: 4px 3px;
+    border-radius: 999px;
+}
+
+/* A separate capsule for each workspace button */
 #workspaces button {
-    padding: 0 5px;
+    font-family: "Noto Sans CJK JP", sans-serif;
+    font-size: 10px;
+    background-color: rgba(36, 40, 59, 0.3);
     color: #c0caf5;
+    padding: 0 8px;
+    margin: 4px 3px;
+    border: none;
+    border-radius: 999px;
 }
 
 #workspaces button.focused {
-    background-color: #bb9af7;
+    background-color: rgba(36, 40, 59, 0.3);
     color: #1a1b26;
-    border-radius: 4px;
 }
-
-#clock, #battery, #network, #wireplumber {
-    padding: 0 5px;
-}
-
