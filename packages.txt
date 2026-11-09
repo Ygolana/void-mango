@@ -5,7 +5,5 @@
 
 Waybar awww base-devel base-system brightnessctl cairo-devel cava cmatrix dbus elogind fastfetch \
 font-awesome foot fuzzel gearlever git glxinfo grim grub imv intel-video-accel mangowc mesa-dri \
-nautilus pipewire python3-devel python3-pipx slurp vim wireplumber wl-clipboard xwayland-satellite \
-yazi
-
-
+nautilus noto-fonts-cjk pipewire python3-devel python3-pipx slurp vim wireplumber wl-clipboard \
+xwayland-satellite yazi
